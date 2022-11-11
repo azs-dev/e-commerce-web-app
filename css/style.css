@@ -1,0 +1,333 @@
+html, body {
+    height: 100%;
+}
+/* FOR LEFT NAV */
+
+.leftnav {
+	height: 100%;
+	width: 40%;
+	float: left;
+	background-color: #00032B;
+	transition: 1s;
+  overflow: hidden;
+}
+
+.aziz-container {
+  margin-left:100%;
+   margin-top:7%;
+   transition: 1s;
+}
+
+/* index hover */
+
+.leftnav:hover {
+	width: 42%;
+	transition: 1s;
+}
+
+.leftnav:hover ~ .rightnav {
+	width: 58%;
+	transition: 1s;
+}
+
+.rightnav:hover {
+  width: 60%;
+  transition: 1s;
+}
+
+.rightnav:hover ~ .leftnav {
+  width: 40%;
+  transition: 1s;
+}
+
+/* index hover */
+
+.main-text {
+	margin-top: 40%;
+	margin-left: 15%;
+  transition: 1s;
+}
+
+.main-text h2 {
+	color: white;
+	font-size: 40px;
+}
+
+.main-text p {
+	color: #C6940B;
+	font-size: 15px;
+}
+
+/* FOR RIGHT NAV */
+
+.rightnav {
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    width:58%;
+    background-color: #f8f9fc;
+}
+
+.rightnav form {
+  margin-top: 30%;
+  padding: 20px;
+}
+
+.rightnav input:hover {
+  background-color:#f6f6f6;
+  transition: 1s;
+}
+
+.rightnav button:hover {
+  transition: 1s;
+}
+
+.rightnav label {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+/* HOME CUSTOMER AND MERCHANT SIDEBAR */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: Arial;
+}
+
+.wrapper {
+  display: flex;
+  position: relative;
+}
+
+.wrapper .sidebar {
+  position: fixed;
+  width: 230px;
+  height: 100%;
+  background: #01062F;
+}
+
+.wrapper .sidebar h2 {
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.wrapper .sidebar ul li {
+  color: white;
+  font-size: 15px;
+  padding: 15px;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  border-top: 1px solid rgba(225,225,225,0.30);
+}
+
+.wrapper .sidebar ul li a {
+  color: #B1B0B0;
+  padding-top: 10px;
+  padding-right: 85px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+}
+
+.wrapper .sidebar ul li a .fas{
+  width: 25px;
+}
+
+.wrapper .sidebar ul li:hover {
+  background: #FFF;
+  transition: 0.5s;
+}
+
+.wrapper .sidebar ul li:hover a {
+  color: black;
+}
+
+.wrapper .main_content {
+  width: 100%;
+  margin-left: 260px;
+  margin-top: 35px;
+}
+
+
+/* END OF CUSTOMER AND MERCHANT HOME SIDEBAR */
+
+/* navbar */
+
+.dost_logo {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.dost_logo:hover {
+  transform: rotate(180deg);
+    transition: all 1s ease-in-out 0s;
+}
+
+.navbar ul li {
+  margin-right: 20px;
+}
+
+.navbar ul li {
+  color: #B1B0B0;
+}
+
+.navbar ul li i {
+  color: #B1B0B0;
+  font-size: 15px;
+}
+
+.navbar ul li .fas:hover {
+  color: #fff;
+}
+
+.navbar span .user-name {
+  color: #C6940B;
+  text-transform: uppercase;
+}
+/*end of navbar */
+
+/* table/products page for merchant */
+
+.header h1 .btn-outline-primary {
+  float: right;
+}
+
+.table-prod {
+  border-bottom: 2px solid #081CC3;
+  border-left: 1px solid #8D8A8A;
+  border-right: 1px solid #8D8A8A;
+}
+
+/* end of table/products page for merchant */
+
+/* dashboard for merchant */
+
+.aziz-table {
+  position: relative;
+  height: 250px;
+  overflow: auto;
+}
+
+.aziz-table th {
+  position: sticky;
+  top: 0;
+}
+
+/* end of dashboard for merchant */
+
+/* store products for customer */
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 250px;
+  text-align: center;
+  font-family: arial;
+  background-color: #f6f6f6;
+  display: inline-block;
+  margin-right: 20px;
+  margin-top: 10px;
+  margin-bottom: 60px;
+}
+
+.product-seller {
+  font-size: 18px;
+}
+
+.product-price {
+  color: #0828CF;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  width: 100%;
+  font-size: 16px;
+  transition: 0.5s
+}
+
+.card button:hover {
+  font-size: 17px;
+  background-color: white;
+  color: black;
+  transition: 0.5s;
+}
+
+/* end of store products for customer */
+
+/* checkout */
+
+.leftnavco {
+	height: 100%;
+	width: 55%;
+	float: left;
+	background-color: #fff;
+	transition: 1s;
+}
+
+.rightnavco {
+  height: 100%;
+  width: 45%;
+  float: right;
+  background-color: #F5F5F5;
+  border: 1px solid #e6e6e6;
+}
+
+
+.leftnavco .container{
+    max-width: 600px;
+    margin-top: 45px;
+    margin-left: 150px;
+}
+
+.rightnavco .container {
+  max-width: 530px;
+  margin-right: 120px;
+}
+
+.rightnavco img {
+  height: 80px;
+  border: 1px solid #E9E8E8;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: white;
+}
+
+.rightnavco .price {
+  font-size: 15px;
+}
+
+.rightnavco .product-description {
+  font-size: 13px;
+  font-style: italic;
+}
+
+/* end of checkout */
+
+/* error handler */
+
+.rightnav .failed {
+  color: red;
+  font-weight: bold;
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.rightnav .success {
+  color: green;
+  font-weight: bold;
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+/* end of error handler */
